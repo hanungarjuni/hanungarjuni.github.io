@@ -388,3 +388,47 @@ select {
 .research-card + .research-card {
     margin-top: 70px;
 }
+/* Research 02 - Final Year Research */
+
+.thesis-images {
+    margin-top: 35px;
+}
+
+.research-result {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid #26333d;
+}
+
+.research-result > span {
+    display: block;
+    margin-bottom: 18px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #8fffd2;
+}
+
+.result-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.result-grid div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.result-grid strong {
+    font-size: 28px;
+    font-weight: 700;
+    color: #f2f6f8;
+}
+
+.result-grid small {
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #91a0aa;
+}
