@@ -368,3 +368,19 @@ select {
 .hero-card .avatar-placeholder {
     transform: translateY(25px);
 }
+/* Research image gallery */
+.research-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+
+.research-images img {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    display: block;
+    border: 1px solid #26333d;
+}
