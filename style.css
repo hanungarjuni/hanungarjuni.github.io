@@ -374,7 +374,7 @@ select {
     grid-template-columns: repeat(4, 1fr);
     gap: 12px;
     margin-top: 25px;
-    margin-bottom: 100px;
+    margin-bottom: 0;
 }
 
 .research-images img {
@@ -383,4 +383,8 @@ select {
     object-fit: cover;
     display: block;
     border: 1px solid #26333d;
+}
+
+.research-card + .research-card {
+    margin-top: 70px;
 }
