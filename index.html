@@ -15,12 +15,17 @@
 <link rel="stylesheet" href="style.css">
 
 <style>
-/* HERO */
+
+/* ==============================
+   HOME BUTTONS
+============================== */
 .hero-actions {
   flex-wrap: wrap;
 }
 
-/* PROJECTS */
+/* ==============================
+   PROJECTS
+============================== */
 .project-tags {
   display: flex;
   flex-wrap: wrap;
@@ -64,7 +69,8 @@
 
 .project-detail-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns:
+    repeat(auto-fit, minmax(180px, 1fr));
   gap: 18px;
   margin-top: 18px;
 }
@@ -82,7 +88,9 @@
   margin: 0;
 }
 
-/* EXPERIENCE */
+/* ==============================
+   EXPERIENCE
+============================== */
 .experience-intro {
   max-width: 740px;
   margin-top: 18px;
@@ -155,7 +163,9 @@
   font-weight: 600;
 }
 
-/* TAHAP 6 - RESEARCH */
+/* ==============================
+   RESEARCH
+============================== */
 .research-summary {
   max-width: 790px;
   color: #a8b6c0;
@@ -200,7 +210,8 @@
 
 .research-detail-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
   gap: 20px;
   margin-top: 20px;
 }
@@ -228,15 +239,97 @@
     gap: 16px;
   }
 }
+
+/* ==============================
+   TAHAP 7 - SKILLS & ACHIEVEMENTS
+============================== */
+.skills-intro {
+  color: #a7b6c1;
+  font-size: .91rem;
+  line-height: 1.75;
+  margin: 22px 0 26px;
+  max-width: 540px;
+}
+
+.skill-group {
+  padding: 20px 0 22px;
+  border-top: 1px solid #26333d;
+}
+
+.skill-group h3 {
+  color: #e3edf2;
+  font: 600 1rem "Space Grotesk", Arial, sans-serif;
+  letter-spacing: .01em;
+  line-height: 1.4;
+}
+
+.skill-group .skill-cloud {
+  margin-top: 13px;
+  gap: 8px;
+}
+
+.skill-group .skill-cloud span {
+  color: #bacbd5;
+  font-size: .74rem;
+  border-color: #33444e;
+}
+
+.achievement-date {
+  display: block;
+  color: #86cddd;
+  font-size: .68rem;
+  letter-spacing: .05em;
+  margin-bottom: 8px;
+}
+
+.achievements .achievement strong {
+  color: #e4eff4;
+  font-size: 1.02rem;
+  line-height: 1.4;
+}
+
+.achievements .achievement p {
+  line-height: 1.65;
+  font-size: .81rem;
+  color: #a5b2bc;
+}
+
+.achievement-link {
+  display: inline-block;
+  margin-top: 11px;
+  color: #61d6ff;
+  font-size: .77rem;
+  text-decoration: none;
+  border-bottom: 1px solid #365765;
+  padding-bottom: 3px;
+}
+
+.achievement-link:hover,
+.achievement-link:focus-visible {
+  color: #bbf0ff;
+  border-bottom-color: currentColor;
+}
+
+#project-smart-iv,
+#project-aquanova {
+  scroll-margin-top: 90px;
+}
+
 </style>
 </head>
 
 <body>
+
 <div class="noise"></div>
 
-<!-- NAVIGATION -->
+<!-- ==============================
+     NAVIGATION
+============================== -->
 <header class="nav">
-  <a class="brand" href="#home">HA<span>.</span></a>
+
+  <a class="brand" href="#home">
+    HA<span>.</span>
+  </a>
 
   <nav>
     <a href="#about">About</a>
@@ -247,35 +340,48 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <button class="menu" aria-label="Open menu">☰</button>
+  <button class="menu" aria-label="Open menu">
+    ☰
+  </button>
+
 </header>
 
 <main>
 
-<!-- HOME -->
+<!-- ==============================
+     HOME
+============================== -->
 <section id="home" class="hero">
+
   <div class="hero-grid"></div>
 
   <div class="hero-content">
+
     <p class="eyebrow">
       MECHANICAL ENGINEERING · DESIGN · APPLIED RESEARCH
     </p>
 
-    <h1>HANUNG<br><span>ARJUNI ATMOJO</span></h1>
+    <h1>
+      HANUNG<br>
+      <span>ARJUNI ATMOJO</span>
+    </h1>
 
     <p class="hero-text">
-      Mechanical Engineering student at Universitas Muhammadiyah Yogyakarta
-      with hands-on experience in mechanical design, instrumentation,
-      IoT systems, and industrial engineering activities. My work includes
-      prototype development, laboratory instruction, and materials research.
+      Mechanical Engineering student at Universitas Muhammadiyah
+      Yogyakarta with hands-on experience in mechanical design,
+      instrumentation, IoT systems, and industrial engineering
+      activities. My work includes prototype development,
+      laboratory instruction, and materials research.
     </p>
 
     <div class="hero-actions">
+
       <a class="btn primary" href="#projects">
         Explore Projects ↗
       </a>
 
-      <a class="btn ghost" href="mailto:hanungaja7788@gmail.com">
+      <a class="btn ghost"
+         href="mailto:hanungaja7788@gmail.com">
         Contact Me ↗
       </a>
 
@@ -284,9 +390,11 @@
          download="CV-Hanung-Arjuni-Atmojo.pdf">
         Download CV ↓
       </a>
+
     </div>
 
     <div class="quick-stats">
+
       <div>
         <strong>3.63</strong>
         <span>GPA / 4.00</span>
@@ -301,10 +409,12 @@
         <strong>03</strong>
         <span>Certifications</span>
       </div>
+
     </div>
   </div>
 
   <div class="hero-card">
+
     <div class="scanline"></div>
 
     <div class="avatar-placeholder">
@@ -320,20 +430,29 @@
     <span class="status">
       <i></i> OPEN TO ENGINEERING OPPORTUNITIES
     </span>
+
   </div>
+
 </section>
 
-
-<!-- ABOUT -->
+<!-- ==============================
+     ABOUT
+============================== -->
 <section id="about" class="section">
+
   <div class="section-label">01 / ABOUT</div>
 
   <div class="two-col">
+
     <div>
-      <h2>Engineering with a<br><em>hands-on mindset.</em></h2>
+      <h2>
+        Engineering with a<br>
+        <em>hands-on mindset.</em>
+      </h2>
     </div>
 
     <div class="about-copy">
+
       <p>
         I am a Mechanical Engineering student at Universitas
         Muhammadiyah Yogyakarta with practical experience in
@@ -374,49 +493,65 @@
           Mechanical Design · Maintenance · Instrumentation · R&amp;D
         </b>
       </div>
+
     </div>
   </div>
+
 </section>
 
-
-<!-- FEATURED PROJECTS -->
+<!-- ==============================
+     FEATURED PROJECTS
+============================== -->
 <section id="projects" class="section projects">
-  <div class="section-label">02 / FEATURED PROJECTS</div>
+
+  <div class="section-label">
+    02 / FEATURED PROJECTS
+  </div>
 
   <div class="section-head">
+
     <h2>Selected <em>work.</em></h2>
+
     <p>
       Projects and engineering experiences highlighted
       from my academic and industrial journey.
     </p>
+
   </div>
 
   <div class="project-grid">
 
     <!-- PROJECT 01: SMART IV STAND -->
-    <article class="project featured">
+    <article id="project-smart-iv"
+             class="project featured">
+
       <div class="project-no">01</div>
 
       <div class="project-images">
+
         <img src="smart-iv-1.jpg"
              alt="Smart IV Stand prototype"
              loading="lazy">
 
         <img src="smart-iv-2.jpg"
-             alt="Smart IV Stand competition documentation"
+             alt="Smart IV Stand capstone competition documentation"
              loading="lazy">
+
       </div>
 
       <div class="project-body">
-        <span class="tag">CAPSTONE DESIGN · 2026</span>
+
+        <span class="tag">
+          CAPSTONE DESIGN · 2026
+        </span>
 
         <h3>SMART IV STAND</h3>
 
         <p>
           A prototype for monitoring remaining IV-fluid weight
           using a load cell, HX711 amplifier, and ESP32
-          microcontroller. This project combines mechanical
-          design, sensor integration, and embedded-system development.
+          microcontroller. This project combines mechanical design,
+          sensor integration, and embedded-system development.
         </p>
 
         <div class="project-tags">
@@ -430,9 +565,11 @@
         </p>
 
         <details class="project-details">
+
           <summary>View technical details</summary>
 
           <div class="project-detail-grid">
+
             <div>
               <h4>System overview</h4>
               <p>
@@ -458,17 +595,21 @@
                 Capstone Design Competition.
               </p>
             </div>
+
           </div>
         </details>
+
       </div>
     </article>
 
 
     <!-- PROJECT 02: ELNUSA -->
     <article class="project">
+
       <div class="project-no">02</div>
 
       <div class="project-images">
+
         <img src="elnusa-1.jpg"
              alt="Industrial internship at PT Elnusa Fabrikasi Konstruksi"
              loading="lazy">
@@ -476,18 +617,22 @@
         <img src="elnusa-2.jpg"
              alt="Engineering internship activity"
              loading="lazy">
+
       </div>
 
       <div class="project-body">
-        <span class="tag">INDUSTRIAL INTERNSHIP · 2025</span>
+
+        <span class="tag">
+          INDUSTRIAL INTERNSHIP · 2025
+        </span>
 
         <h3>PT ELNUSA FABRIKASI KONSTRUKSI</h3>
 
         <p>
           Internship experience in the Construction Fabrication
           Division, including support for field maintenance,
-          equipment inspection, technical analysis, and a
-          workshop solar-PV capacity calculation.
+          equipment inspection, technical analysis, and a workshop
+          solar-PV capacity calculation.
         </p>
 
         <div class="project-tags">
@@ -501,45 +646,51 @@
         </p>
 
         <details class="project-details">
+
           <summary>View technical details</summary>
 
           <div class="project-detail-grid">
+
             <div>
               <h4>Engineering task</h4>
               <p>
-                Estimated a solar-PV system capacity for a
-                workshop with a reported energy demand of
-                approximately 1,926 kWh/day.
+                Estimated a solar-PV system capacity for
+                a workshop with a reported energy demand
+                of approximately 1,926 kWh/day.
               </p>
             </div>
 
             <div>
               <h4>Other activities</h4>
               <p>
-                Supported field maintenance, equipment
-                inspection, and technical engineering activities.
+                Supported field maintenance, equipment inspection,
+                and technical engineering activities.
               </p>
             </div>
 
             <div>
               <h4>Calculation result</h4>
               <p>
-                A preliminary capacity recommendation of
-                approximately 550 kWp based on 1,342 modules
-                rated at 410 Wp each.
+                A preliminary capacity recommendation
+                of approximately 550 kWp based on
+                1,342 modules rated at 410 Wp each.
               </p>
             </div>
+
           </div>
         </details>
+
       </div>
     </article>
 
 
     <!-- PROJECT 03: AQUANOVA -->
-    <article class="project">
+    <article id="project-aquanova" class="project">
+
       <div class="project-no">03</div>
 
       <div class="project-images">
+
         <img src="aquanova-1.jpg"
              alt="AquaNova student engineering project"
              loading="lazy">
@@ -547,9 +698,11 @@
         <img src="aquanova-2.jpg"
              alt="AquaNova project documentation"
              loading="lazy">
+
       </div>
 
       <div class="project-body">
+
         <span class="tag">PKM-KI · 2024</span>
 
         <h3>AQUANOVA</h3>
@@ -567,15 +720,18 @@
         <p class="project-highlight">
           Achievement: PKM-KI 2024 Funding Recipient
         </p>
+
       </div>
     </article>
 
 
-    <!-- PROJECT 04: DATA & IOT SYSTEMS -->
+    <!-- PROJECT 04: DATA & IOT -->
     <article class="project">
+
       <div class="project-no">04</div>
 
       <div class="project-images">
+
         <img src="iot-1.jpg"
              alt="IoT laboratory practical activity"
              loading="lazy">
@@ -583,9 +739,11 @@
         <img src="iot-2.jpg"
              alt="Microcontroller and sensor system"
              loading="lazy">
+
       </div>
 
       <div class="project-body">
+
         <span class="tag">
           LABORATORY · IoT &amp; DATA ACQUISITION
         </span>
@@ -607,18 +765,23 @@
         <p class="project-highlight">
           Focus: Embedded Systems · Measurement · Data Acquisition
         </p>
+
       </div>
     </article>
 
   </div>
 </section>
 
-
-<!-- EXPERIENCE -->
+<!-- ==============================
+     EXPERIENCE
+============================== -->
 <section id="experience" class="section">
+
   <div class="section-label">03 / EXPERIENCE</div>
 
-  <h2>Engineering &amp; <em>teaching experience.</em></h2>
+  <h2>
+    Engineering &amp; <em>teaching experience.</em>
+  </h2>
 
   <p class="experience-intro">
     Experience gained through an industrial internship and practical
@@ -628,14 +791,18 @@
 
   <div class="timeline">
 
-    <!-- ELNUSA -->
+    <!-- EXPERIENCE 01 -->
     <article>
+
       <div class="date">
         AUG 2025 — SEP 2025
-        <span class="experience-type">INDUSTRIAL INTERNSHIP</span>
+        <span class="experience-type">
+          INDUSTRIAL INTERNSHIP
+        </span>
       </div>
 
       <div class="experience-body">
+
         <h3>
           Engineering Intern — Construction Fabrication Division
         </h3>
@@ -645,6 +812,7 @@
         </p>
 
         <ul class="experience-points">
+
           <li>
             Supported field maintenance, equipment inspection,
             and technical engineering activities.
@@ -655,6 +823,7 @@
             for a workshop with an estimated energy demand
             of approximately 1,926 kWh/day.
           </li>
+
         </ul>
 
         <p class="experience-result">
@@ -666,18 +835,23 @@
           <span>Equipment Inspection</span>
           <span>Solar PV Analysis</span>
         </div>
+
       </div>
     </article>
 
 
-    <!-- PROGRAMMING AND DATA ACQUISITION -->
+    <!-- EXPERIENCE 02 -->
     <article>
+
       <div class="date">
         MAR 2025 — JUL 2026
-        <span class="experience-type">TEACHING ASSISTANT</span>
+        <span class="experience-type">
+          TEACHING ASSISTANT
+        </span>
       </div>
 
       <div class="experience-body">
+
         <h3>
           Teaching Assistant — Programming &amp; Data Acquisition
         </h3>
@@ -687,6 +861,7 @@
         </p>
 
         <ul class="experience-points">
+
           <li>
             Supported laboratory practice in programming,
             data acquisition, and data processing.
@@ -696,6 +871,7 @@
             Assisted with troubleshooting of programming tasks
             and laboratory systems during practical activities.
           </li>
+
         </ul>
 
         <div class="experience-tags">
@@ -703,25 +879,33 @@
           <span>Data Acquisition</span>
           <span>Troubleshooting</span>
         </div>
+
       </div>
     </article>
 
 
-    <!-- INTERNET OF THINGS -->
+    <!-- EXPERIENCE 03 -->
     <article>
+
       <div class="date">
         DEC 2025 — FEB 2026
-        <span class="experience-type">TEACHING ASSISTANT</span>
+        <span class="experience-type">
+          TEACHING ASSISTANT
+        </span>
       </div>
 
       <div class="experience-body">
-        <h3>Teaching Assistant — Internet of Things (IoT)</h3>
+
+        <h3>
+          Teaching Assistant — Internet of Things (IoT)
+        </h3>
 
         <p class="company">
           Mechanical Engineering Department, UMY · Yogyakarta
         </p>
 
         <ul class="experience-points">
+
           <li>
             Supported practical sessions involving
             microcontroller programming and sensor integration.
@@ -731,6 +915,7 @@
             Assisted with IoT system testing and troubleshooting
             during laboratory activities.
           </li>
+
         </ul>
 
         <div class="experience-tags">
@@ -738,18 +923,23 @@
           <span>Sensor Integration</span>
           <span>System Testing</span>
         </div>
+
       </div>
     </article>
 
 
-    <!-- INDUSTRIAL METROLOGY -->
+    <!-- EXPERIENCE 04 -->
     <article>
+
       <div class="date">
         JUN 2024 — JUL 2024
-        <span class="experience-type">TEACHING ASSISTANT</span>
+        <span class="experience-type">
+          TEACHING ASSISTANT
+        </span>
       </div>
 
       <div class="experience-body">
+
         <h3>Teaching Assistant — Industrial Metrology</h3>
 
         <p class="company">
@@ -757,15 +947,17 @@
         </p>
 
         <ul class="experience-points">
+
           <li>
-            Supported the use of measurement equipment in
-            industrial metrology laboratory activities.
+            Supported the use of measurement equipment
+            in industrial metrology laboratory activities.
           </li>
 
           <li>
             Assisted with processing and documenting
             practical measurement data.
           </li>
+
         </ul>
 
         <div class="experience-tags">
@@ -773,45 +965,52 @@
           <span>Measurement</span>
           <span>Data Processing</span>
         </div>
+
       </div>
     </article>
 
   </div>
 </section>
 
-
-<!-- RESEARCH - TAHAP 6 -->
+<!-- ==============================
+     RESEARCH
+============================== -->
 <section id="research" class="section research-section">
+
   <div class="section-label">
     04 / RESEARCH PROJECTS
   </div>
 
   <div class="section-head">
+
     <h2>Materials <em>research.</em></h2>
 
     <p>
       Experimental research on composite laminates,
       material selection, and mechanical-performance evaluation.
     </p>
+
   </div>
 
 
   <!-- RESEARCH 01: CARALL -->
   <article class="research-card">
+
     <div class="research-status">
       <span class="status-dot"></span>
       COMPLETED RESEARCH · 2026
     </div>
 
     <div class="research-content">
+
       <div class="research-info">
+
         <span class="research-tag">
           COMPOSITE MATERIALS · MECHANICAL TESTING
         </span>
 
         <h3>
-          CARBON / ALUMINUM / EPOXY
-          HYBRID LAMINATES
+          CARBON / ALUMINUM / EPOXY HYBRID LAMINATES
         </h3>
 
         <p class="research-summary">
@@ -830,6 +1029,7 @@
         </div>
 
         <div class="research-meta">
+
           <div>
             <span>RESEARCH AREA</span>
             <strong>Composite Materials</strong>
@@ -844,6 +1044,7 @@
             <span>STATUS</span>
             <strong>Completed Research</strong>
           </div>
+
         </div>
       </div>
 
@@ -852,15 +1053,17 @@
         <strong>01</strong>
         <small>2026</small>
       </div>
+
     </div>
 
     <details class="research-details">
+
       <summary>View research overview</summary>
 
       <div class="research-detail-grid">
+
         <div>
           <h4>Research objective</h4>
-
           <p>
             Investigate the relationship between woven
             carbon-fiber orientation and the mechanical
@@ -870,7 +1073,6 @@
 
         <div>
           <h4>Material system</h4>
-
           <p>
             Hybrid laminate composed of carbon-fiber
             reinforcement, aluminum, and an epoxy matrix.
@@ -879,17 +1081,18 @@
 
         <div>
           <h4>Evaluation focus</h4>
-
           <p>
-            Flexural and impact response across fiber-orientation
-            variants. Quantitative findings are not shown
-            on this page.
+            Flexural and impact response across
+            fiber-orientation variants. Quantitative
+            findings are not shown on this page.
           </p>
         </div>
+
       </div>
     </details>
 
     <div class="research-images">
+
       <img src="thesis-1.jpg"
            alt="CARALL research documentation, photo 1"
            loading="lazy">
@@ -905,26 +1108,30 @@
       <img src="thesis-4.jpg"
            alt="CARALL research documentation, photo 4"
            loading="lazy">
+
     </div>
+
   </article>
 
 
   <!-- RESEARCH 02: TENGKAWANG -->
   <article class="research-card">
+
     <div class="research-status">
       <span class="status-dot"></span>
       ONGOING RESEARCH · 2026
     </div>
 
     <div class="research-content">
+
       <div class="research-info">
+
         <span class="research-tag">
           BIOFILLER · HYBRID COMPOSITES
         </span>
 
         <h3>
-          TENGKAWANG BIOFILLER &amp;
-          HYBRID LAMINATES
+          TENGKAWANG BIOFILLER &amp; HYBRID LAMINATES
         </h3>
 
         <p class="research-summary">
@@ -943,6 +1150,7 @@
         </div>
 
         <div class="research-meta">
+
           <div>
             <span>RESEARCH AREA</span>
             <strong>Hybrid Composites</strong>
@@ -957,6 +1165,7 @@
             <span>STATUS</span>
             <strong>Ongoing Research</strong>
           </div>
+
         </div>
       </div>
 
@@ -965,42 +1174,46 @@
         <strong>02</strong>
         <small>2026</small>
       </div>
+
     </div>
 
     <details class="research-details">
+
       <summary>View research overview</summary>
 
       <div class="research-detail-grid">
+
         <div>
           <h4>Research objective</h4>
-
           <p>
-            Study the influence of Tengkawang-based filler
-            and laminate configuration on mechanical performance.
+            Study the influence of Tengkawang-based
+            filler and laminate configuration
+            on mechanical performance.
           </p>
         </div>
 
         <div>
           <h4>Research variables</h4>
-
           <p>
-            Biofiller extraction duration, filler loading,
-            and spacing of perforations in aluminum foil.
+            Biofiller extraction duration,
+            filler loading, and spacing of
+            perforations in aluminum foil.
           </p>
         </div>
 
         <div>
           <h4>Current status</h4>
-
           <p>
             The research is ongoing. Final experimental
             findings are not presented at this stage.
           </p>
         </div>
+
       </div>
     </details>
 
     <div class="research-images">
+
       <img src="tengkawang-1.jpg"
            alt="Tengkawang composite research documentation, photo 1"
            loading="lazy">
@@ -1016,77 +1229,184 @@
       <img src="tengkawang-4.jpg"
            alt="Tengkawang composite research documentation, photo 4"
            loading="lazy">
+
     </div>
+
   </article>
 
 </section>
 
-
-<!-- SKILLS & ACHIEVEMENTS -->
+<!-- ==============================
+     TAHAP 7: SKILLS & ACHIEVEMENTS
+============================== -->
 <section id="skills" class="section skills-section">
+
   <div class="section-label">
     05 / SKILLS &amp; ACHIEVEMENTS
   </div>
 
   <div class="skills-layout">
+
     <div>
-      <h2>Tools I <em>work with.</em></h2>
 
-      <div class="skill-cloud">
-        <span>Industrial Metrology</span>
-        <span>Instrumentation</span>
-        <span>Data Acquisition</span>
-        <span>Arduino</span>
-        <span>ESP32</span>
-        <span>Maintenance</span>
-        <span>Microsoft Office</span>
-        <span>SolidWorks</span>
-        <span>Troubleshooting</span>
-        <span>Technical Analysis</span>
+      <h2>
+        Skills &amp; <em>practical expertise.</em>
+      </h2>
+
+      <p class="skills-intro">
+        Skills developed through mechanical engineering projects,
+        an industrial internship, materials research,
+        and teaching assistance in laboratory courses.
+      </p>
+
+      <!-- SKILL GROUP 01 -->
+      <div class="skill-group">
+
+        <h3>
+          Mechanical &amp; Industrial Engineering
+        </h3>
+
+        <div class="skill-cloud">
+          <span>SolidWorks</span>
+          <span>Industrial Metrology</span>
+          <span>Maintenance</span>
+        </div>
+
       </div>
+
+
+      <!-- SKILL GROUP 02 -->
+      <div class="skill-group">
+
+        <h3>
+          Instrumentation &amp; Embedded Systems
+        </h3>
+
+        <div class="skill-cloud">
+          <span>Instrumentation</span>
+          <span>Data Acquisition</span>
+          <span>Arduino</span>
+          <span>ESP32</span>
+          <span>Troubleshooting</span>
+        </div>
+
+      </div>
+
+
+      <!-- SKILL GROUP 03 -->
+      <div class="skill-group">
+
+        <h3>
+          Engineering Analysis &amp; Documentation
+        </h3>
+
+        <div class="skill-cloud">
+          <span>Technical Analysis</span>
+          <span>Microsoft Office</span>
+        </div>
+
+      </div>
+
     </div>
 
+
+    <!-- ACHIEVEMENTS -->
     <div class="achievements">
-      <h3>ACHIEVEMENTS</h3>
 
+      <h3>SELECTED ACHIEVEMENTS</h3>
+
+      <!-- ACHIEVEMENT 01 -->
       <div class="achievement">
+
         <b>01</b>
+
         <div>
-          <strong>Juara I</strong>
+
+          <span class="achievement-date">
+            2026 · APSTM-PTMA
+          </span>
+
+          <strong>
+            1st Place — Capstone Design Competition
+          </strong>
+
           <p>
-            APSTM-PTMA Capstone Design Competition ·
-            SMART IV STAND · 2026
+            Smart IV Stand engineering prototype.
           </p>
+
+          <a class="achievement-link"
+             href="#project-smart-iv">
+            View related project ↗
+          </a>
+
         </div>
       </div>
 
+
+      <!-- ACHIEVEMENT 02 -->
       <div class="achievement">
+
         <b>02</b>
+
         <div>
-          <strong>PKM-KI Funding</strong>
+
+          <span class="achievement-date">
+            2024 · PKM-KI
+          </span>
+
+          <strong>
+            Student Innovation Funding Recipient
+          </strong>
+
           <p>
-            Recipient of PKM-KI 2024 funding · AquaNova
+            AquaNova engineering innovation project.
           </p>
+
+          <a class="achievement-link"
+             href="#project-aquanova">
+            View related project ↗
+          </a>
+
         </div>
       </div>
 
+
+      <!-- ACHIEVEMENT 03 -->
       <div class="achievement">
+
         <b>03</b>
+
         <div>
+
+          <span class="achievement-date">
+            2024 · PTMA
+          </span>
+
           <strong>PKP2 PTMA</strong>
-          <p>Team member · 2024</p>
+
+          <p>
+            Participated as a team member.
+          </p>
+
         </div>
       </div>
+
     </div>
+
   </div>
 </section>
 
-
-<!-- CREDENTIALS -->
+<!-- ==============================
+     CREDENTIALS
+============================== -->
 <section class="section credentials">
-  <div class="section-label">06 / CREDENTIALS</div>
+
+  <div class="section-label">
+    06 / CREDENTIALS
+  </div>
 
   <div class="credential-grid">
+
     <div>
       <span>CSWA</span>
       <h3>SOLIDWORKS CAD DESIGN ASSOCIATE</h3>
@@ -1104,13 +1424,18 @@
       <h3>OCCUPATIONAL HEALTH AND SAFETY OFFICER</h3>
       <p>Certified Competency · 2026</p>
     </div>
+
   </div>
 </section>
 
-
-<!-- CONTACT -->
+<!-- ==============================
+     CONTACT
+============================== -->
 <section id="contact" class="contact">
-  <div class="section-label">07 / CONTACT</div>
+
+  <div class="section-label">
+    07 / CONTACT
+  </div>
 
   <h2>
     Let's build something<br>
@@ -1123,6 +1448,7 @@
   </p>
 
   <div class="contact-links">
+
     <a href="mailto:hanungaja7788@gmail.com">
       hanungaja7788@gmail.com ↗
     </a>
@@ -1136,18 +1462,29 @@
        target="_blank" rel="noopener noreferrer">
       WhatsApp ↗
     </a>
+
   </div>
+
 </section>
 
 </main>
 
-<!-- FOOTER -->
+<!-- ==============================
+     FOOTER
+============================== -->
 <footer>
+
   <span>HANUNG ARJUNI ATMOJO</span>
-  <span>MECHANICAL ENGINEERING · YOGYAKARTA</span>
+
+  <span>
+    MECHANICAL ENGINEERING · YOGYAKARTA
+  </span>
+
   <span>© 2026</span>
+
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
