@@ -4,26 +4,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Hanung Arjuni Atmojo | Mechanical Engineering Portfolio</title>
+
 <meta name="description" content="Mechanical Engineering portfolio of Hanung Arjuni Atmojo, featuring mechanical design, instrumentation, IoT projects, industrial experience, and applied materials research.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
 
 <style>
+/* HERO BUTTONS */
 .hero-actions {
   flex-wrap: wrap;
 }
 
-/* TAHAP 4 — PROJECTS */
+/* PROJECT TAGS */
 .project-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   margin: 0 0 18px;
 }
+
 .project-tags span {
   border: 1px solid #314650;
   border-radius: 3px;
@@ -31,17 +37,20 @@
   color: #bad7e2;
   font-size: .7rem;
 }
+
 .project .project-highlight {
   margin: 0;
   color: #80e4f6;
   font-size: .85rem;
   font-weight: 600;
 }
+
 .project-details {
   border-top: 1px solid #26333d;
   margin-top: 20px;
   padding-top: 14px;
 }
+
 .project-details summary {
   cursor: pointer;
   color: #61d6ff;
@@ -49,36 +58,115 @@
   font-weight: 700;
   letter-spacing: .04em;
 }
+
 .project-details summary:hover,
 .project-details summary:focus-visible {
   color: #b8eeff;
 }
+
 .project-detail-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 18px;
   margin-top: 18px;
 }
+
 .project-detail-grid h4 {
   color: #dce9ef;
   font-size: .85rem;
   margin-bottom: 8px;
 }
+
 .project-detail-grid p {
   color: #aebcc7;
   font-size: .82rem;
   line-height: 1.65;
   margin: 0;
 }
+
+/* TAHAP 5 - EXPERIENCE */
+.experience-intro {
+  max-width: 740px;
+  margin-top: 18px;
+  color: #a1afb9;
+  font-size: .92rem;
+  line-height: 1.7;
+}
+
+.experience-type {
+  display: block;
+  margin-top: 10px;
+  color: #778995;
+  font-size: .62rem;
+  letter-spacing: .1em;
+  line-height: 1.5;
+}
+
+.experience-body .company {
+  margin: 5px 0 14px;
+}
+
+.experience-points {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0;
+  display: grid;
+  gap: 9px;
+}
+
+.experience-points li {
+  position: relative;
+  padding-left: 17px;
+  color: #a3b1bc;
+  font-size: .9rem;
+  line-height: 1.65;
+}
+
+.experience-points li::before {
+  content: "";
+  position: absolute;
+  top: .67em;
+  left: 1px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #61d6ff;
+}
+
+.experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 16px;
+}
+
+.experience-tags span {
+  border: 1px solid #2c3d48;
+  border-radius: 3px;
+  padding: 6px 9px;
+  background: #0a1116;
+  color: #c0d0da;
+  font-size: .69rem;
+}
+
+.timeline .experience-result {
+  margin-top: 14px;
+  color: #7fe0f5;
+  font-size: .86rem;
+  line-height: 1.6;
+  font-weight: 600;
+}
 </style>
 </head>
 
 <body>
+
 <div class="noise"></div>
 
 <!-- NAVIGATION -->
 <header class="nav">
   <a class="brand" href="#home">HA<span>.</span></a>
+
   <nav>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
@@ -86,6 +174,7 @@
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
   </nav>
+
   <button class="menu" aria-label="Open menu">☰</button>
 </header>
 
@@ -94,38 +183,68 @@
 <!-- HOME -->
 <section id="home" class="hero">
   <div class="hero-grid"></div>
+
   <div class="hero-content">
-    <p class="eyebrow">MECHANICAL ENGINEERING · DESIGN · APPLIED RESEARCH</p>
+    <p class="eyebrow">
+      MECHANICAL ENGINEERING · DESIGN · APPLIED RESEARCH
+    </p>
+
     <h1>HANUNG<br><span>ARJUNI ATMOJO</span></h1>
+
     <p class="hero-text">
-      Mechanical Engineering student at Universitas Muhammadiyah Yogyakarta
-      with hands-on experience in mechanical design, instrumentation,
-      IoT systems, and industrial engineering activities. My work includes
-      prototype development, laboratory instruction, and materials research.
+      Mechanical Engineering student at Universitas Muhammadiyah
+      Yogyakarta with hands-on experience in mechanical design,
+      instrumentation, IoT systems, and industrial engineering
+      activities. My work includes prototype development,
+      laboratory instruction, and materials research.
     </p>
 
     <div class="hero-actions">
-      <a class="btn primary" href="#projects">Explore Projects ↗</a>
-      <a class="btn ghost" href="mailto:hanungaja7788@gmail.com">Contact Me ↗</a>
-      <a class="btn ghost" href="CV-Hanung-Arjuni-Atmojo.pdf" download="CV-Hanung-Arjuni-Atmojo.pdf">Download CV ↓</a>
+      <a class="btn primary" href="#projects">
+        Explore Projects ↗
+      </a>
+
+      <a class="btn ghost" href="mailto:hanungaja7788@gmail.com">
+        Contact Me ↗
+      </a>
+
+      <a class="btn ghost"
+         href="CV-Hanung-Arjuni-Atmojo.pdf"
+         download="CV-Hanung-Arjuni-Atmojo.pdf">
+        Download CV ↓
+      </a>
     </div>
 
     <div class="quick-stats">
-      <div><strong>3.63</strong><span>GPA / 4.00</span></div>
-      <div><strong>01</strong><span>1st Place Capstone</span></div>
-      <div><strong>03</strong><span>Certifications</span></div>
+      <div>
+        <strong>3.63</strong>
+        <span>GPA / 4.00</span>
+      </div>
+
+      <div>
+        <strong>01</strong>
+        <span>1st Place Capstone</span>
+      </div>
+
+      <div>
+        <strong>03</strong>
+        <span>Certifications</span>
+      </div>
     </div>
   </div>
 
   <div class="hero-card">
     <div class="scanline"></div>
+
     <div class="avatar-placeholder">
       <img src="profile.jpg" alt="Portrait of Hanung Arjuni Atmojo">
     </div>
+
     <p class="hero-role">
       <span>MECHANICAL ENGINEERING</span><br>
       <b>DESIGN · INSTRUMENTATION · RESEARCH</b>
     </p>
+
     <span class="status">
       <i></i> OPEN TO ENGINEERING OPPORTUNITIES
     </span>
@@ -135,37 +254,47 @@
 <!-- ABOUT -->
 <section id="about" class="section">
   <div class="section-label">01 / ABOUT</div>
+
   <div class="two-col">
     <div>
       <h2>Engineering with a<br><em>hands-on mindset.</em></h2>
     </div>
+
     <div class="about-copy">
       <p>
-        I am a Mechanical Engineering student at Universitas Muhammadiyah
-        Yogyakarta with practical experience in engineering projects,
-        laboratory activities, industrial internship work, and materials
-        research. I enjoy applying engineering principles to real-world
-        challenges, from mechanical prototyping to sensor-based systems.
+        I am a Mechanical Engineering student at Universitas
+        Muhammadiyah Yogyakarta with practical experience in
+        engineering projects, laboratory activities, industrial
+        internship work, and materials research. I enjoy applying
+        engineering principles to real-world challenges, from
+        mechanical prototyping to sensor-based systems.
       </p>
+
       <p>
-        As a teaching assistant for Industrial Metrology, Programming &amp;
-        Data Acquisition, and Internet of Things (IoT), I have supported
-        measurement activities, microcontroller programming, data processing,
-        and system troubleshooting. I am interested in mechanical design,
-        industrial maintenance, instrumentation, and applied engineering research.
+        As a teaching assistant for Industrial Metrology,
+        Programming &amp; Data Acquisition, and Internet of Things
+        (IoT), I have supported measurement activities,
+        microcontroller programming, data processing, and system
+        troubleshooting. I am interested in mechanical design,
+        industrial maintenance, instrumentation, and applied
+        engineering research.
       </p>
+
       <div class="info-row">
         <span>EDUCATION</span>
         <b>Universitas Muhammadiyah Yogyakarta</b>
       </div>
+
       <div class="info-row">
         <span>DEGREE</span>
         <b>Bachelor's Program in Mechanical Engineering</b>
       </div>
+
       <div class="info-row">
         <span>LOCATION</span>
         <b>Yogyakarta, Indonesia</b>
       </div>
+
       <div class="info-row">
         <span>CAREER INTERESTS</span>
         <b>Mechanical Design · Maintenance · Instrumentation · R&amp;D</b>
@@ -177,6 +306,7 @@
 <!-- FEATURED PROJECTS -->
 <section id="projects" class="section projects">
   <div class="section-label">02 / FEATURED PROJECTS</div>
+
   <div class="section-head">
     <h2>Selected <em>work.</em></h2>
     <p>
@@ -187,7 +317,7 @@
 
   <div class="project-grid">
 
-    <!-- PROJECT 01: SMART IV STAND -->
+    <!-- PROJECT 01 -->
     <article class="project featured">
       <div class="project-no">01</div>
 
@@ -195,8 +325,9 @@
         <img src="smart-iv-1.jpg"
              alt="Smart IV Stand prototype"
              loading="lazy">
+
         <img src="smart-iv-2.jpg"
-             alt="Smart IV Stand capstone competition documentation"
+             alt="Smart IV Stand competition documentation"
              loading="lazy">
       </div>
 
@@ -211,7 +342,7 @@
           and embedded-system development.
         </p>
 
-        <div class="project-tags" aria-label="Key technologies">
+        <div class="project-tags">
           <span>Mechanical Design</span>
           <span>ESP32</span>
           <span>Load Cell &amp; HX711</span>
@@ -237,17 +368,16 @@
             <div>
               <h4>My contribution</h4>
               <p>
-                Mechanical design, sensor integration,
-                calibration, and prototype system development.
+                Mechanical design, sensor integration, calibration,
+                and prototype system development.
               </p>
             </div>
 
             <div>
               <h4>Project outcome</h4>
               <p>
-                A functional capstone prototype recognized
-                with first place at the APSTM-PTMA
-                Capstone Design Competition.
+                A functional capstone prototype recognized with
+                first place at the APSTM-PTMA Capstone Design Competition.
               </p>
             </div>
           </div>
@@ -255,7 +385,7 @@
       </div>
     </article>
 
-    <!-- PROJECT 02: INDUSTRIAL INTERNSHIP -->
+    <!-- PROJECT 02 -->
     <article class="project">
       <div class="project-no">02</div>
 
@@ -263,6 +393,7 @@
         <img src="elnusa-1.jpg"
              alt="Industrial internship at PT Elnusa Fabrikasi Konstruksi"
              loading="lazy">
+
         <img src="elnusa-2.jpg"
              alt="Engineering internship activity"
              loading="lazy">
@@ -278,7 +409,7 @@
           technical analysis, and a workshop solar-PV capacity calculation.
         </p>
 
-        <div class="project-tags" aria-label="Areas of work">
+        <div class="project-tags">
           <span>Maintenance</span>
           <span>Inspection</span>
           <span>Solar PV Analysis</span>
@@ -295,17 +426,17 @@
             <div>
               <h4>Engineering task</h4>
               <p>
-                Estimated a solar-PV system capacity for a
-                workshop with a reported energy demand
-                of approximately 1,926 kWh/day.
+                Estimated a solar-PV system capacity for a workshop
+                with a reported energy demand of approximately
+                1,926 kWh/day.
               </p>
             </div>
 
             <div>
               <h4>Other activities</h4>
               <p>
-                Supported field maintenance, equipment
-                inspection, and technical engineering activities.
+                Supported field maintenance, equipment inspection,
+                and technical engineering activities.
               </p>
             </div>
 
@@ -321,7 +452,7 @@
       </div>
     </article>
 
-    <!-- PROJECT 03: AQUANOVA -->
+    <!-- PROJECT 03 -->
     <article class="project">
       <div class="project-no">03</div>
 
@@ -329,6 +460,7 @@
         <img src="aquanova-1.jpg"
              alt="AquaNova student engineering project"
              loading="lazy">
+
         <img src="aquanova-2.jpg"
              alt="AquaNova project documentation"
              loading="lazy">
@@ -343,7 +475,7 @@
           in 2024 and presented through a PTMA student program.
         </p>
 
-        <div class="project-tags" aria-label="Project category">
+        <div class="project-tags">
           <span>Student Innovation</span>
           <span>PKM-KI</span>
         </div>
@@ -354,7 +486,7 @@
       </div>
     </article>
 
-    <!-- PROJECT 04: DATA & IOT SYSTEMS -->
+    <!-- PROJECT 04 -->
     <article class="project">
       <div class="project-no">04</div>
 
@@ -362,6 +494,7 @@
         <img src="iot-1.jpg"
              alt="IoT laboratory practical activity"
              loading="lazy">
+
         <img src="iot-2.jpg"
              alt="Microcontroller and sensor system"
              loading="lazy">
@@ -377,7 +510,7 @@
           system testing, and troubleshooting.
         </p>
 
-        <div class="project-tags" aria-label="Key tools and skills">
+        <div class="project-tags">
           <span>Arduino</span>
           <span>ESP32</span>
           <span>Instrumentation</span>
@@ -392,65 +525,177 @@
   </div>
 </section>
 
-<!-- EXPERIENCE -->
+<!-- EXPERIENCE - TAHAP 5 -->
 <section id="experience" class="section">
   <div class="section-label">03 / EXPERIENCE</div>
-  <h2>Experience <em>timeline.</em></h2>
+
+  <h2>Engineering &amp; <em>teaching experience.</em></h2>
+
+  <p class="experience-intro">
+    Experience gained through an industrial internship and practical
+    laboratory instruction, focusing on technical analysis,
+    measurement, embedded systems, and engineering problem-solving.
+  </p>
 
   <div class="timeline">
+
+    <!-- ELNUSA -->
     <article>
-      <div class="date">AUG 2025 — SEP 2025</div>
-      <div>
-        <h3>Intern — Divisi Fabrikasi Konstruksi</h3>
-        <p class="company">PT Elnusa Fabrikasi Konstruksi · Jakarta</p>
-        <p>
-          Calculated solar PV capacity for workshop energy demand
-          and supported field maintenance and equipment inspection activities.
+      <div class="date">
+        AUG 2025 — SEP 2025
+        <span class="experience-type">INDUSTRIAL INTERNSHIP</span>
+      </div>
+
+      <div class="experience-body">
+        <h3>
+          Engineering Intern — Construction Fabrication Division
+        </h3>
+
+        <p class="company">
+          PT Elnusa Fabrikasi Konstruksi · Jakarta
         </p>
+
+        <ul class="experience-points">
+          <li>
+            Supported field maintenance, equipment inspection,
+            and technical engineering activities.
+          </li>
+
+          <li>
+            Performed a preliminary solar-PV sizing calculation
+            for a workshop with an estimated energy demand
+            of approximately 1,926 kWh/day.
+          </li>
+        </ul>
+
+        <p class="experience-result">
+          Key calculation: 1,342 solar modules × 410 Wp ≈ 550 kWp.
+        </p>
+
+        <div class="experience-tags">
+          <span>Maintenance</span>
+          <span>Equipment Inspection</span>
+          <span>Solar PV Analysis</span>
+        </div>
       </div>
     </article>
 
+    <!-- PROGRAMMING & DATA ACQUISITION -->
     <article>
-      <div class="date">MAR 2025 — JUL 2026</div>
-      <div>
-        <h3>Teaching Assistant — Programming &amp; Data Acquisition</h3>
-        <p class="company">Teknik Mesin UMY · Yogyakarta</p>
-        <p>
-          Supported programming, data acquisition, data processing,
-          and troubleshooting of laboratory systems.
+      <div class="date">
+        MAR 2025 — JUL 2026
+        <span class="experience-type">TEACHING ASSISTANT</span>
+      </div>
+
+      <div class="experience-body">
+        <h3>
+          Teaching Assistant — Programming &amp; Data Acquisition
+        </h3>
+
+        <p class="company">
+          Mechanical Engineering Department, UMY · Yogyakarta
         </p>
+
+        <ul class="experience-points">
+          <li>
+            Supported laboratory practice in programming,
+            data acquisition, and data processing.
+          </li>
+
+          <li>
+            Assisted with troubleshooting of programming tasks
+            and laboratory systems during practical activities.
+          </li>
+        </ul>
+
+        <div class="experience-tags">
+          <span>Programming</span>
+          <span>Data Acquisition</span>
+          <span>Troubleshooting</span>
+        </div>
       </div>
     </article>
 
+    <!-- INTERNET OF THINGS -->
     <article>
-      <div class="date">DEC 2025 — FEB 2026</div>
-      <div>
-        <h3>Teaching Assistant — Internet of Things</h3>
-        <p class="company">Teknik Mesin UMY · Yogyakarta</p>
-        <p>
-          Supported microcontroller programming, sensor integration,
-          system testing, and troubleshooting.
+      <div class="date">
+        DEC 2025 — FEB 2026
+        <span class="experience-type">TEACHING ASSISTANT</span>
+      </div>
+
+      <div class="experience-body">
+        <h3>
+          Teaching Assistant — Internet of Things (IoT)
+        </h3>
+
+        <p class="company">
+          Mechanical Engineering Department, UMY · Yogyakarta
         </p>
+
+        <ul class="experience-points">
+          <li>
+            Supported practical sessions involving
+            microcontroller programming and sensor integration.
+          </li>
+
+          <li>
+            Assisted with IoT system testing and troubleshooting
+            during laboratory activities.
+          </li>
+        </ul>
+
+        <div class="experience-tags">
+          <span>Microcontrollers</span>
+          <span>Sensor Integration</span>
+          <span>System Testing</span>
+        </div>
       </div>
     </article>
 
+    <!-- INDUSTRIAL METROLOGY -->
     <article>
-      <div class="date">JUN 2024 — JUL 2024</div>
-      <div>
-        <h3>Teaching Assistant — Industrial Metrology</h3>
-        <p class="company">Teknik Mesin UMY · Yogyakarta</p>
-        <p>
-          Supported measurement equipment use and processing
-          of practical laboratory data.
+      <div class="date">
+        JUN 2024 — JUL 2024
+        <span class="experience-type">TEACHING ASSISTANT</span>
+      </div>
+
+      <div class="experience-body">
+        <h3>
+          Teaching Assistant — Industrial Metrology
+        </h3>
+
+        <p class="company">
+          Mechanical Engineering Department, UMY · Yogyakarta
         </p>
+
+        <ul class="experience-points">
+          <li>
+            Supported the use of measurement equipment
+            in industrial metrology laboratory activities.
+          </li>
+
+          <li>
+            Assisted with processing and documenting
+            practical measurement data.
+          </li>
+        </ul>
+
+        <div class="experience-tags">
+          <span>Industrial Metrology</span>
+          <span>Measurement</span>
+          <span>Data Processing</span>
+        </div>
       </div>
     </article>
+
   </div>
 </section>
 
 <!-- RESEARCH -->
 <section id="research" class="section research-section">
-  <div class="section-label">04 / RESEARCH & PUBLICATIONS</div>
+  <div class="section-label">
+    04 / RESEARCH & PUBLICATIONS
+  </div>
 
   <div class="section-head">
     <h2>Research <em>experience.</em></h2>
@@ -472,15 +717,17 @@
         <span class="research-tag">
           MATERIALS RESEARCH · COMPOSITE ENGINEERING
         </span>
+
         <h3>
           CARBON / ALUMINUM / EPOXY
           HYBRID LAMINATES
         </h3>
+
         <p>
-          Experimental investigation of the effect of woven carbon
-          fiber orientation on the mechanical properties of Carbon
-          Fiber Reinforced Aluminium Laminate (CARALL), focusing on
-          flexural and impact performance.
+          Experimental investigation of the effect of woven
+          carbon fiber orientation on the mechanical properties
+          of Carbon Fiber Reinforced Aluminium Laminate (CARALL),
+          focusing on flexural and impact performance.
         </p>
 
         <div class="research-meta">
@@ -488,10 +735,12 @@
             <span>RESEARCH AREA</span>
             <strong>Composite Materials</strong>
           </div>
+
           <div>
             <span>APPLICATION</span>
             <strong>Structural Materials</strong>
           </div>
+
           <div>
             <span>STATUS</span>
             <strong>Completed Research</strong>
@@ -526,15 +775,18 @@
         <span class="research-tag">
           MATERIALS RESEARCH · COMPOSITE ENGINEERING
         </span>
+
         <h3>
           TENGKAWANG BIOFILLER &amp;
           HYBRID LAMINATES
         </h3>
+
         <p>
           Research investigating the effect of Tengkawang
           biofiller extraction time, loading, and aluminum-foil
           perforation spacing on the mechanical properties of
-          woven glass/epoxy hybrid laminates for automotive applications.
+          woven glass/epoxy hybrid laminates for automotive
+          applications.
         </p>
 
         <div class="research-meta">
@@ -542,10 +794,12 @@
             <span>RESEARCH AREA</span>
             <strong>Composite Materials</strong>
           </div>
+
           <div>
             <span>APPLICATION</span>
             <strong>Automotive Materials</strong>
           </div>
+
           <div>
             <span>STATUS</span>
             <strong>Ongoing Research</strong>
@@ -571,11 +825,14 @@
 
 <!-- SKILLS & ACHIEVEMENTS -->
 <section id="skills" class="section skills-section">
-  <div class="section-label">05 / SKILLS &amp; ACHIEVEMENTS</div>
+  <div class="section-label">
+    05 / SKILLS &amp; ACHIEVEMENTS
+  </div>
 
   <div class="skills-layout">
     <div>
       <h2>Tools I <em>work with.</em></h2>
+
       <div class="skill-cloud">
         <span>Industrial Metrology</span>
         <span>Instrumentation</span>
@@ -592,20 +849,28 @@
 
     <div class="achievements">
       <h3>ACHIEVEMENTS</h3>
+
       <div class="achievement">
         <b>01</b>
         <div>
           <strong>Juara I</strong>
-          <p>APSTM-PTMA Capstone Design Competition · SMART IV STAND · 2026</p>
+          <p>
+            APSTM-PTMA Capstone Design Competition ·
+            SMART IV STAND · 2026
+          </p>
         </div>
       </div>
+
       <div class="achievement">
         <b>02</b>
         <div>
           <strong>PKM-KI Funding</strong>
-          <p>Recipient of PKM-KI 2024 funding · AquaNova</p>
+          <p>
+            Recipient of PKM-KI 2024 funding · AquaNova
+          </p>
         </div>
       </div>
+
       <div class="achievement">
         <b>03</b>
         <div>
@@ -627,11 +892,13 @@
       <h3>SOLIDWORKS CAD DESIGN ASSOCIATE</h3>
       <p>CAD design certification</p>
     </div>
+
     <div>
       <span>MOS</span>
       <h3>MICROSOFT OFFICE SPECIALIST</h3>
       <p>Word Associate</p>
     </div>
+
     <div>
       <span>BNSP</span>
       <h3>OCCUPATIONAL HEALTH AND SAFETY OFFICER</h3>
@@ -643,7 +910,9 @@
 <!-- CONTACT -->
 <section id="contact" class="contact">
   <div class="section-label">07 / CONTACT</div>
+
   <h2>Let's build something<br><em>meaningful.</em></h2>
+
   <p>
     Open to engineering opportunities, project collaborations,
     research, and technical discussions.
@@ -653,10 +922,14 @@
     <a href="mailto:hanungaja7788@gmail.com">
       hanungaja7788@gmail.com ↗
     </a>
-    <a href="https://www.linkedin.com/in/hanungarjuniatmojo/" target="_blank" rel="noopener noreferrer">
+
+    <a href="https://www.linkedin.com/in/hanungarjuniatmojo/"
+       target="_blank" rel="noopener noreferrer">
       LinkedIn ↗
     </a>
-    <a href="https://wa.me/62812273215308" target="_blank" rel="noopener noreferrer">
+
+    <a href="https://wa.me/62812273215308"
+       target="_blank" rel="noopener noreferrer">
       WhatsApp ↗
     </a>
   </div>
@@ -664,6 +937,7 @@
 
 </main>
 
+<!-- FOOTER -->
 <footer>
   <span>HANUNG ARJUNI ATMOJO</span>
   <span>MECHANICAL ENGINEERING · YOGYAKARTA</span>
