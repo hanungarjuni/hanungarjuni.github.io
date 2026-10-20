@@ -453,3 +453,24 @@ select {
     border-color: #8fffd2;
     transform: translateY(-3px);
 }
+
+/* ==========================================
+   TEXT ALIGNMENT - JUSTIFY
+   Rata kanan-kiri untuk seluruh paragraf
+========================================== */
+
+main p,
+.experience-points li {
+    text-align: justify;
+    text-align-last: left;
+    text-justify: inter-word;
+    hyphens: auto;
+}
+
+/* Pertahankan teks kartu profil di tengah */
+.hero-card p,
+.hero-role {
+    text-align: center;
+    text-align-last: center;
+}
+
